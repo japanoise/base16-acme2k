@@ -1,0 +1,44 @@
+/* base16-acme2k (https://github.com/japanoise/base16-acme2k)
+ * by japanoise
+ * {{scheme-name}} schema by {{scheme-author}}
+ *
+ * This is a c header intended to be used to create a config.h for use
+ * with acme2k. It should work with both the original repository and
+ * any forks:
+ *
+ * - https://github.com/karahobny/acme2k
+ * - https://github.com/dhsavell/acme2k
+ * - https://github.com/japanoise/acme2k
+ */
+
+/* In some forks, this is enabled by default and changes the behavior
+ * of the color scheme */
+#undef ENABLE_PASTELS
+
+/* Default text buffer colors */
+#define C_TXTBG			0x{{base00-hex}}FF
+#define C_TXTFG			0x{{base05-hex}}FF
+#define C_TXTHLBG		0x{{base0D-hex}}FF
+#define C_TXTHLFG		0x{{base07-hex}}FF
+
+/* Highlight background when using button 2 or 3 */
+#define C_BUTTON2HL		0x{{base0E-hex}}FF
+#define C_BUTTON3HL		0x{{base08-hex}}FF
+
+/* Tag, i.e. menu bar */
+#define C_TAGBG			0x{{base00-hex}}FF
+#define C_TAGFG			0x{{base05-hex}}FF
+#define C_TAGHLBG		0x{{base0D-hex}}FF
+#define C_TAGHLFG		0x{{base07-hex}}FF
+
+/* Buttons to the left of the tag */
+#define C_WINBUTTON		0x{{base0E-hex}}FF /* Button used for adjusting columns */
+#define C_COLBUTTON		0x{{base03-hex}}FF /* Text window button */
+#define C_TMPBUTTON		0x{{base09-hex}}FF /* Dirty marker (inside color) */
+
+/* Scroll bar background color */
+#define C_SCROLLBG		0x{{base02-hex}}FF
+
+/* Window colors */
+#define C_WINBG			0x{{base00-hex}}FF
+#define C_WINBORDER		0x{{base01-hex}}FF
